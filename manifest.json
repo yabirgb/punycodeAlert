@@ -1,0 +1,16 @@
+{
+	"name": "Punycode alert",
+	"description": "An app that alerts you when entering an url using unicode chars.",
+	"version": "0.1",
+	"manifest_version": 2,
+	"background": {
+		"persistent": false,
+		"scripts": ["lib/alert.js"]
+	},
+	"permissions": ["tabs"],
+	"icons": { "16": "img/scan.png", "128": "img/scan-128.png" },
+	"browser_action": {
+		"default_icon": "img/scan.png",
+		"default_popup": "main.html"
+	}
+}
