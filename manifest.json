@@ -1,6 +1,6 @@
 {
 	"name": "Punycode alert",
-	"description": "An app that alerts you when entering an url using unicode chars.",
+	"description": "A extension that alerts you when a url written in unicode is opened.",
 	"version": "0.1",
 	"manifest_version": 2,
 	"background": {
