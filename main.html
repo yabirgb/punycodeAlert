@@ -13,19 +13,23 @@
 </head>
 
 <body>
-  <h3>Hello!</h3>
+  <h3>Punycode Alerter</h3>
+
   <h4>What is punycode?</h4>
-  <p>Punycode is a way of representing urls that allows more characters than ASCII.</p>
+  <p>Punycode is a way of representing URLs that allows more characters than ASCII.</p>
+
   <h4>Why is this a problem?</h4>
-  <p>Someone can suplant the identity of a oficial website and send a link to the
-    fake website. A person can't diferenciate by the url the original from the fake
-    and this can end in something dangerous for your privacy and/or data.
-  <p>Relate link with examples and more information:</p>
+  <p>An attacker can use punycode to register a domain that looks like an official one. In a browser's URL field,
+    <code>https://www.xn--80ak6aa92e.com</code> looks just like <code>https://www.apple.com</code>. Users can misled
+    into entering their credentials on this fake website.</p>
+
+  <p>More information:</p>
   <ul>
-    <li><a href="https://www.wordfence.com/blog/2017/04/chrome-firefox-unicode-phishing/" >Technical details </a>.</li>
-    <li><a href="https://www.theregister.co.uk/2017/04/18/homograph_attack_again/" >Media </a>.</li>
+    <li><a href="https://www.wordfence.com/blog/2017/04/chrome-firefox-unicode-phishing/" >Technical details</a></li>
+    <li><a href="https://www.theregister.co.uk/2017/04/18/homograph_attack_again/" >Media</a></li>
+    <li><a href="https://www.chromium.org/developers/design-documents/idn-in-google-chrome" >How Chromium (Chrome) handles it</a></li>
   </ul>
-  <div id="main"></div>
+
   <p>Author: <a href="http://github.com/yabirgb">Yábir Garcia</a></p>
   <p>Icon by <a href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a></p>
   <p>This extension can be found at <a href="https://github.com/yabirgb/punycodeAlert">Github</a> under MIT license</p>
