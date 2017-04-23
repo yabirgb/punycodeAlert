@@ -1,18 +1,12 @@
 {
 	"name": "Punycode alert",
 	"description": "A extension that alerts you when a url written in unicode is opened.",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"manifest_version": 2,
 	"background": {
-		"persistent": false,
+		"persistent": true,
 		"scripts": ["lib/alert.js"]
 	},
-	"content_scripts": [
-		{
-			"matches": ["*://*/*", "*://*/*"],
-			"js": ["lib/alert.js"]
-		}
-	],
 	"permissions": ["tabs", "notifications", "webNavigation"],
 	"icons": { "16": "img/scan.png", "128": "img/scan-128.png" },
 	"browser_action": {
